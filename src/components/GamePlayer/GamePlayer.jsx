@@ -4,9 +4,9 @@ import Button from '@material-ui/core/Button';
 export default function GamePlayer(props) {
     return (
         <div id='gamePlayerDiv'>
-            <div>
+            {/* <div>
                 {props.choice}
-            </div>
+            </div> */}
             <div id='gamePlayerButtonsDiv'>
                 <div className="gamePlayerButton">
                     <Button onClick={props.onClick} value="rock" variant="contained" color="primary">

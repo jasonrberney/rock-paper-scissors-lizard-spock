@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import ComputerPlayer from './ComputerPlayer.jsx';
+import ComputerPlayerResult from './ComputerPlayerResult.jsx';
 
-class ComputerPlayerContainer extends Component {
+class ComputerPlayerResultContainer extends Component {
     constructor(props) {
         super(props)
 
@@ -12,7 +12,7 @@ class ComputerPlayerContainer extends Component {
     render() {
         return (
             <div>
-                <ComputerPlayer choice={this.props.player.computerSelection} />
+                <ComputerPlayerResult choice={this.props.player.computerSelection} />
             </div>
         )
     }
@@ -24,4 +24,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(ComputerPlayerContainer);
+export default connect(mapStateToProps)(ComputerPlayerResultContainer);

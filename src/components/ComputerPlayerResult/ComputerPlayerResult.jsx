@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-export default function ComputerPlayer(props) {
+import { playerChoiceImg } from '../../utils/imageSelector.js';
+
+export default function ComputerPlayerResult(props) {
+    let currentImg = playerChoiceImg(props.choice);
+
     return (
         <div>
             {
                 props.choice == undefined
                     ? <CircularProgress color="secondary" size={100} />
-                    : props.choice
+                    : <div className="choiceImg">{currentImg}</div>
             }
         </div>
     )

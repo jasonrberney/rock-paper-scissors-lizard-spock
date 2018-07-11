@@ -4,13 +4,15 @@ $color: green;
 //   color: $color;
 // }
 
+@import '../../components/GamePlayer/gamePlayer';
+@import '../../components/PlayerTitle/playerTitle';
+
 #gamePlayContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 60%;
 }
 
 #scoreKeeperContainerDiv {
@@ -38,4 +40,16 @@ $color: green;
   margin-left: 10px;
 }
 
-@import '../../components/GamePlayer/gamePlayer';
+#resultsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 100px;
+}
+
+.choiceImg {
+
+}

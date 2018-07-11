@@ -42,7 +42,7 @@ class GamePlayerContainer extends Component {
     render() {
         return (
             <div id="gamePlayerContainerDiv">
-                <GamePlayer choice={this.props.player.playerSelection} onClick={this.onClick} />
+                <GamePlayer onClick={this.onClick} />
             </div>
         )
     }
