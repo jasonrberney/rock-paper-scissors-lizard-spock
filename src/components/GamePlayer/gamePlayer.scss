@@ -1,4 +1,24 @@
 #gamePlayerDiv {
-    color: red;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gamePlayerContainerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+#gamePlayerButtonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gamePlayerButton {
+    margin-right: 10px;
 }

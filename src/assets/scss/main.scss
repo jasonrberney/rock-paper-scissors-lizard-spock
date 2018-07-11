@@ -13,4 +13,24 @@ $color: green;
   margin-right: 25%;
 }
 
+#scoreKeeperContainerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+#scoreBoardDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#scoreKeeperScoreboardText {
+  font-size: 24px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
 @import '../../components/GamePlayer/gamePlayer';

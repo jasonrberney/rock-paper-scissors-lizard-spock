@@ -7,22 +7,32 @@ export default function GamePlayer(props) {
             <div>
                 {props.choice}
             </div>
-            <div>
-                <Button onClick={props.onClick} value="rock" variant="contained" color="primary">
-                    Rock
-                </Button>
-                <Button onClick={props.onClick} value="paper" variant="contained" color="primary">
-                    Paper
-                </Button>
-                <Button onClick={props.onClick} value="scissors" variant="contained" color="primary">
-                    Scissors
-                </Button>
-                <Button onClick={props.onClick} value="lizard" variant="contained" color="primary">
-                    Lizard
-                </Button>
-                <Button onClick={props.onClick} value="spock" variant="contained" color="primary">
-                    Spock
-                </Button>
+            <div id='gamePlayerButtonsDiv'>
+                <div className="gamePlayerButton">
+                    <Button onClick={props.onClick} value="rock" variant="contained" color="primary">
+                        Rock
+                    </Button>
+                </div>
+                <div className="gamePlayerButton">
+                    <Button onClick={props.onClick} value="paper" variant="contained" color="primary">
+                        Paper
+                    </Button>
+                </div>
+                <div className="gamePlayerButton">
+                    <Button onClick={props.onClick} value="scissors" variant="contained" color="primary">
+                        Scissors
+                    </Button>
+                </div>
+                <div className="gamePlayerButton">
+                    <Button onClick={props.onClick} value="lizard" variant="contained" color="primary">
+                        Lizard
+                    </Button>
+                </div>
+                <div>
+                    <Button onClick={props.onClick} value="spock" variant="contained" color="primary">
+                        Spock
+                    </Button>
+                </div>
             </div>
         </div>
     )
