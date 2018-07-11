@@ -17,6 +17,12 @@ export default function GamePlayer(props) {
                 <Button onClick={props.onClick} value="scissors" variant="contained" color="primary">
                     Scissors
                 </Button>
+                <Button onClick={props.onClick} value="lizard" variant="contained" color="primary">
+                    Lizard
+                </Button>
+                <Button onClick={props.onClick} value="spock" variant="contained" color="primary">
+                    Spock
+                </Button>
             </div>
         </div>
     )

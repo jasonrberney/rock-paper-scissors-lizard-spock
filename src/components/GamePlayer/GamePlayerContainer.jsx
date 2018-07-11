@@ -26,6 +26,14 @@ class GamePlayerContainer extends Component {
                 console.log("scissors");
                 this.props.dispatch(playerChooses("scissors"));
                 break;
+            case "LIZARD":
+                console.log("lizard");
+                this.props.dispatch(playerChooses("lizard"));
+                break;
+            case "SPOCK":
+                console.log("spock");
+                this.props.dispatch(playerChooses("spock"));
+                break;
             default:
                 console.log("nothing registered as clicked");
         }

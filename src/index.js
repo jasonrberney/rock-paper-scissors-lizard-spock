@@ -5,11 +5,10 @@ import { Provider } from "react-redux";
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 
-import greeting from "./redux/reducers/reducer";
 import player from "./redux/reducers/player";
 import Root from "./config/Root";
 
-const reducers = combineReducers({ greeting, player });
+const reducers = combineReducers({ player });
 
 const store = createStore(reducers, compose(
     applyMiddleware(thunk),
