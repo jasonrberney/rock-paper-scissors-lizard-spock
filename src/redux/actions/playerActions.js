@@ -33,6 +33,15 @@ const setTie = tieGame => ({
     tieGame
 })
 
+export function resetScoreboard() {
+    return (dispatch, getState) => {
+        Promise.all([
+            dispatch(setPlayerScore(0)),
+            dispatch(setComputerScore(0))
+        ])
+    }
+}
+
 const choices = {
     rock: {name: "Rock", defeats: ["scissors","lizard"]},
     paper: {name: "Paper", defeats: ["rock", "spock"]},

@@ -33,4 +33,9 @@ $color: green;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
+#resetScoreDiv {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 @import '../../components/GamePlayer/gamePlayer';
