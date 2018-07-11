@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { dispatch } from 'redux';
+import { connect } from 'react-redux';
 
 import GamePlayer from './GamePlayer.jsx';
+import { playerChooses } from '../../redux/actions/playerActions';
 
 class GamePlayerContainer extends Component {
     constructor(props) {
@@ -13,12 +16,15 @@ class GamePlayerContainer extends Component {
         switch(e.target.innerText) {
             case "ROCK":
                 console.log("rock");
+                this.props.dispatch(playerChooses("rock"));
                 break;
             case "PAPER":
                 console.log("paper");
+                this.props.dispatch(playerChooses("paper"));
                 break;
             case "SCISSORS":
                 console.log("scissors");
+                this.props.dispatch(playerChooses("scissors"));
                 break;
             default:
                 console.log("nothing registered as clicked");
@@ -28,10 +34,16 @@ class GamePlayerContainer extends Component {
     render() {
         return (
             <div>
-                <GamePlayer onClick={this.onClick} />
+                <GamePlayer choice={this.props.player.playerSelection} onClick={this.onClick} />
             </div>
         )
     }
 }
 
-export default GamePlayerContainer;
+function mapStateToProps(state) {
+    return {
+        player: state.player
+    }
+}
+
+export default connect(mapStateToProps)(GamePlayerContainer);

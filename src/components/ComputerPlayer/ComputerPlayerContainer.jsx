@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import ComputerPlayer from './ComputerPlayer.jsx';
 
@@ -11,10 +12,16 @@ class ComputerPlayerContainer extends Component {
     render() {
         return (
             <div>
-                <ComputerPlayer />
+                <ComputerPlayer choice={this.props.player.computerSelection} />
             </div>
         )
     }
 }
 
-export default ComputerPlayerContainer;
+function mapStateToProps(state) {
+    return {
+        player: state.player
+    }
+}
+
+export default connect(mapStateToProps)(ComputerPlayerContainer);
