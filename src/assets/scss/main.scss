@@ -1,0 +1,16 @@
+$color: green;
+
+// body {
+//   color: $color;
+// }
+
+#gamePlayContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@import '../../components/GamePlayer/gamePlayer';
