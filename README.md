@@ -4,7 +4,7 @@ This repository contains a game similar to rock-paper-scissors but instead adds 
 
 The application is hosted online using Firebase and can be viewed here: [https://rockpaperscissorslizards-3e5e2.firebaseapp.com/](https://rockpaperscissorslizards-3e5e2.firebaseapp.com/)
 
-Give it a try! The computer randomly generates a choice every time the user makes a selection. If the player or computer won (meaning it is not a draw) then the score will be appropriately added to the scoreboard. Good luck!
+Give it a try! The computer randomly generates a choice every time the user makes a selection. If the player or computer won (meaning it is not a draw) then the score will be appropriately added to the scoreboard. Make sure to click directly on the text in buttons otherwise your click may not register! Good luck!
 
 Rules: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
 
