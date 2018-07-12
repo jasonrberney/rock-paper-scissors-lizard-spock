@@ -76,6 +76,10 @@ function addPlayerWinSelection(winner) {
         let newWinList = getState().player.playerWinSelections;
         newWinList.push(winner);
 
+        if (newWinList.length == 10) {
+            newWinList.push("You Win! (Please Reset Score)")
+        }
+
         Promise.all([
             dispatch(setPlayerWinSelections(newWinList))
         ])
@@ -86,6 +90,10 @@ function addComputerWinSelection(winner) {
     return (dispatch, getState) => {
         let newWinList = getState().player.computerWinSelections;
         newWinList.push(winner);
+
+        if (newWinList.length == 10) {
+            newWinList.push("Computer Wins! (Please Reset Score)")
+        }
 
         Promise.all([
             dispatch(setComputerWinSelections(newWinList))

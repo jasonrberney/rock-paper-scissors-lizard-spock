@@ -8,7 +8,12 @@ export default function ScoreKeeper(props) {
 
     if (props.list) {
         winList = props.list.map((element, index) => {
-            return <div key={index}>{`${index + 1}. ${element}`}</div>
+            if (index == 10) {
+                return <div key={index}>{`${element}`}</div>
+            }
+            else {
+                return <div key={index}>{`${index + 1}. ${element}`}</div>
+            }
         })
     }
 

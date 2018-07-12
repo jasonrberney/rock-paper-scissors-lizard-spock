@@ -1,14 +1,14 @@
-# rock-paper-scissors-lizard-spock Game using React
+# rock-paper-scissors-lizard-spock game using React
 
-This repository contains a game similar to rock-paper-scissors but instead adds a couple more variables including lizard and spock. The app was built using React and Redux. The UI leverages Google's [material-ui](https://material-ui.com/) library that was created to implement Google's Material Design through React components. The project uses webpack for bundling and babel for compiling. The app also uses jest in combination with husky to run a couple simple tests before every commit and push to the github repo. 
+This repository contains a game similar to rock-paper-scissors but instead adds two variables - lizard and spock. The app was built using React and Redux. The UI leverages Google's [material-ui](https://material-ui.com/) library that was created to implement Google's Material Design through React components. The project uses webpack for bundling and babel for compiling. The app also uses jest in combination with husky to run a couple simple tests before every commit and push to the github repo. 
 
 The application is hosted online using Firebase and can be viewed here: [https://rockpaperscissorslizards-3e5e2.firebaseapp.com/](https://rockpaperscissorslizards-3e5e2.firebaseapp.com/)
 
-Give it a try! The computer randomly generates a choice every time the user makes a selection. If the player or computer won (meaning it is not a draw) then the score will be appropriately added to the scoreboard. Make sure to click directly on the text in buttons otherwise your click may not register! Good luck!
+Give it a try! Play to 10 points. The computer randomly generates a choice every time the user makes a selection. If the player or computer wins (meaning it is not a draw) then the score will be appropriately added to the scoreboard. Make sure to click directly on the text in buttons otherwise your click may not register! Good luck!
 
 Rules: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
 
-Sources - I found a piece of logic ([http://jsfiddle.net/h3TcP/2/](http://jsfiddle.net/h3TcP/2/)) that accomplished how to decide the winner. I expanded upon this function to accomplish the same thing while simultaneously managing my state. This functionality can be found in src/redux/actions/playerActions.js in the playerChooses function, which is also a redux thunk. I also used on of my github repositories for spinning up the application to avoid some of the time it takes to configure the boilerplate code. That repository can be found here [https://github.com/jasonrberney/react-redux-webpack-boilerplate](https://github.com/jasonrberney/react-redux-webpack-boilerplate).
+Sources - I found a piece of logic ([http://jsfiddle.net/h3TcP/2/](http://jsfiddle.net/h3TcP/2/)) that accomplished how to decide the winner. I expanded upon this function to accomplish the same thing while simultaneously managing my state. This functionality can be found in src/redux/actions/playerActions.js in the playerChooses function, which is also a redux thunk. I also used one of my github repositories for spinning up the application to avoid some of the time it takes to configure the boilerplate code. That repository can be found here [https://github.com/jasonrberney/react-redux-webpack-boilerplate](https://github.com/jasonrberney/react-redux-webpack-boilerplate).
 
 ## Starting the dev server
 
