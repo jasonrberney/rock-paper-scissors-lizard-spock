@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 
 export default function ScoreKeeper(props) {
@@ -23,4 +24,9 @@ export default function ScoreKeeper(props) {
             </div>
         </div>
     )
+}
+
+ScoreKeeper.propTypes = {
+    score: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired
 }

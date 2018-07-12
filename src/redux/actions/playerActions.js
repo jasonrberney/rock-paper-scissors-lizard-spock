@@ -93,6 +93,7 @@ function addComputerWinSelection(winner) {
     }
 }
 
+// main action (redux thunk) with logic of how to handle a player choice
 export function playerChooses(selection) {
     return (dispatch, getState) => {
         // reset all text before running the comparison again

@@ -1,3 +1,7 @@
+/*
+    Utility for selecting appropriate image when player selection is made
+*/
+
 import React from 'react';
 
 import rock from '../assets/images/rock.png';
@@ -19,6 +23,6 @@ export const playerChoiceImg = playerChoice => {
         case "spock":
             return <img src={spock} />;
         default:
-            console.log("error matching player choice to image")
+            console.log("error matching player choice to image (may be due to initial load)")
     }
 }

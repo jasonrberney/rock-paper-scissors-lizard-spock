@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 
 export default function GamePlayer(props) {
     return (
         <div id='gamePlayerDiv'>
-            {/* <div>
-                {props.choice}
-            </div> */}
             <div id='gamePlayerButtonsDiv'>
                 <div className="gamePlayerButton">
                     <Button onClick={props.onClick} value="rock" variant="contained" color="primary">
@@ -37,3 +35,7 @@ export default function GamePlayer(props) {
         </div>
     )
 };
+
+GamePlayer.propTypes = {
+    onClick: PropTypes.func.isRequired
+}
