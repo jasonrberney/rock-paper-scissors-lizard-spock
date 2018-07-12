@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 export default function PlayerTitle() {
     return (
         <div id="playerTitleDiv">
-            <div className="playerTitleText">
+            <div id="computerTitleText" className="playerTitleText">
                 COMPUTER
             </div>
-            <div className="playerTitleText">
+            <div id="playerTitleText" className="playerTitleText">
                 YOUR PICK!
             </div>
         </div>

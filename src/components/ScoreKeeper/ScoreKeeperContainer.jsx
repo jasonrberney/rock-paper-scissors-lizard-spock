@@ -24,9 +24,9 @@ class ScoreKeeperContainer extends Component {
                     SCOREBOARD
                 </div>
                 <div id="scoreBoardDiv">
-                    <ScoreKeeper color={"secondary"} score={this.props.player.computerScore} />
+                    <ScoreKeeper color={"secondary"} score={this.props.player.computerScore} list={this.props.player.computerWinSelections} />
                     <ResetScore onClick={this.onClick} />
-                    <ScoreKeeper color={"primary"} score={this.props.player.playerScore} />
+                    <ScoreKeeper color={"primary"} score={this.props.player.playerScore} list={this.props.player.playerWinSelections} />
                 </div>
             </div>
         )

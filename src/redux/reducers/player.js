@@ -1,6 +1,8 @@
 const defaultState = {
     playerSelection: undefined,
+    playerWinSelections: [],
     computerSelection: undefined,
+    computerWinSelections: [],
     playerScore: 0,
     computerScore: 0,
     playerWins: undefined,
@@ -44,6 +46,16 @@ const player = (state = defaultState, action) => {
             return {
                 ...state,
                 tie: action.tieGame
+            }
+        case 'SET_PLAYER_WIN_SELECTIONS':
+            return {
+                ...state,
+                playerWinSelections: action.wins
+            }
+        case 'SET_COMPUTER_WIN_SELECTIONS':
+            return {
+                ...state,
+                computerWinSelections: action.wins
             }
         default:
             return state;

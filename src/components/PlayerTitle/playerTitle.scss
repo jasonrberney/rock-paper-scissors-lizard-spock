@@ -1,14 +1,22 @@
 #playerTitleDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 28%;
-    margin-right: 28%;
     padding-bottom: 100px;
 }
 
 .playerTitleText {
     font-size: 24px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#computerTitleText {
+    margin-right: 30px;
+    color: #f50057;
+}
+
+#playerTitleText {
+    margin-left: 30px;
+    color: #3f51b5;
 }

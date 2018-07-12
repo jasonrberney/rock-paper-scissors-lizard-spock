@@ -10,8 +10,8 @@ export default function ComputerPlayerResult(props) {
         <div>
             {
                 props.choice == undefined
-                    ? <CircularProgress color="secondary" size={100} />
-                    : <div className="choiceImg">{currentImg}</div>
+                    ? <CircularProgress color="secondary" size={100} style={{'margin-right': '30px'}} />
+                    : <div id="computerImg">{currentImg}</div>
             }
         </div>
     )
